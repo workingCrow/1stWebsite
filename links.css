@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { 
+	background-image: url("../images/repeated_background.jpg");
+	background-image: no-repeat, center, center, cover;
+	width: 960px; 
+	margin:0 auto;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	color:#E2AB9D;
+
+}
+
+h1 {
+	color:#FABCA5;
+	padding: 14px;
+}
+
+
+h2 {
+
+	color: #FF7675;
+}
+
+p.me {
+
+	padding-bottom: 10px;
+}
+
+hr.line {
+	
+	border: 2px solid #FF7675;
+}
+.nav {
+	width: 100%;
+	background-color: #3F3665;
+	margin: 0;
+	padding: 0;
+	box-shadow: 1px 1px 90px;
+	color: #6D313;
+	overflow: hidden;
+	border: thick outset #2D2634;
+}
+
+
+.nav li {
+	
+	display: inline-block;
+	font-size: 20px; 
+	padding: 10px;
+	padding-top: -5px;
+	border: thick;
+	
+}
+
+.nav {
+	border: thick outset #886DBF;
+}
+
+.about {
+	
+	box-shadow: 1px 1px 90px #3F3665;
+	
+}
+.container {
+  display: inline-flex;
+  width: 100%;
+  padding: 1% 2%;
+  box-sizing: border-box;
+  height: 60vh;
+
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 .5%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 300%;
+  height: calc(90% - 1vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+
+.box:hover { flex: 1 1 65%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
+.social {
+	
+	display: inline-block;
+}
+
+.btn{
+  position: relative;
+  display: block;
+  background-color: #3F3665;
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ff7675;
+  padding: 12px 90px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
+a:link {
+  color: #18041C;
+}
+	
+a:visited {
+	color: #886DBF;
+}
+	
+a:hover {
+	color: #F37171;
+		
+}
+p.legibility {
+  text-rendering: optimizeLegibility;
+}
+p.speed {
+  text-rendering: optimizeSpeed;
+}
